@@ -238,7 +238,7 @@ To qualify as a dedicated TLS server authentication PKI hierarchy under this pol
     - when disclosed to the CCADB…
         - **prior to February 15, 2025,** include the extendedKeyUsage extension and (1) only assert an extendedKeyUsage purpose of id-kp-serverAuth OR (2) only assert extendedKeyUsage purposes of id-kp-serverAuth and id-kp-clientAuth.
         -  **on or after February 15, 2025,** include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
-    -  NOT contain a public key corresponding to any other unexpired or non-revoked certificate that asserts different extendedKeyUsage values.
+    -  NOT contain a public key corresponding to any other unexpired or unrevoked certificate that asserts different extendedKeyUsage values.
 2. All corresponding unexpired and unrevoked subscriber (i.e., TLS server authentication) certificates MUST include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
 
 ##### 3.2.2 PKI Hierarchies included in the Chrome Root Store
@@ -251,7 +251,7 @@ To align all PKI hierarchies included in the Chrome Root Store on the principle 
     -  when disclosed to the CCADB…
         -  **prior to February 15, 2026,** include the extendedKeyUsage extension and (1) only assert an extendedKeyUsage purpose of id-kp-serverAuth OR (2) only assert extendedKeyUsage purposes of id-kp-serverAuth and id-kp-clientAuth.
         -  **on or after February 15, 2026,** include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
-    -  NOT contain a public key corresponding to any other unexpired or non-revoked certificate that asserts different extendedKeyUsage values.
+    -  NOT contain a public key corresponding to any other unexpired or unrevoked certificate that asserts different extendedKeyUsage values.
 2. All corresponding unexpired and unrevoked subscriber (i.e., TLS server authentication) certificates issued on or after February 15, 2026 MUST include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
 
 **Before** **February 15, 2026**, CA Owners with a CA included in the Chrome Root Store whose corresponding PKI hierarchy does not adhere to the above requirements MAY, at their own discretion:
@@ -369,7 +369,7 @@ Applicant PKI hierarchies MUST provide evidence of at least one complete audit b
 For Applicant PKI hierarchies subject of a CCADB Root Inclusion Request submitted to Google Chrome **on or after September 15, 2025**:
 
 -  Except for Externally-operated CAs, when CAs in the hierarchy are assessed against:
-    -  **only a single audit scheme** (e.g., all CAs in the hierarchy are only assessed against the WebTrust scheme), they MUST fall under a single audit scope (i.e., represented in a single WebTrust Assurance Report) for the assessed criteria (e.g., (1) WebTrust Principles and Criteria for Certification Authorities, (2) WebTrust Principles and Criteria for Certification Authorities - Network Security, (3) WebTrust Principles and Criteria for Certification Authorities - SSL Baseline, or (4) WebTrust for CA - Extended Validation - SSL).
+    -  **only a single audit scheme** (e.g., all CAs in the hierarchy are only assessed against the WebTrust scheme), they MUST fall under a single audit scope (i.e., represented in a single WebTrust Assurance Report) for the assessed criteria (e.g., (1) "WebTrust Principles and Criteria for Certification Authorities", (2) "WebTrust Principles and Criteria for Certification Authorities - Network Security", (3) "WebTrust Principles and Criteria for Certification Authorities - SSL Baseline", or (4) "WebTrust for CA - Extended Validation - SSL").
     -  **multiple audit schemes** (e.g., some CAs are assessed against the WebTrust scheme and others are assessed against the ETSI scheme), all CAs assessed against each respective scheme MUST fall under a single audit scope for that scheme (i.e., all ETSI-assessed CAs are represented in a single ETSI Audit Attestation Letter, and all WebTrust CAs are represented in a single WebTrust Assurance Report) for the assessed criteria. 
 
 #### 4.2 Ad-Hoc Audits
@@ -434,7 +434,7 @@ In some cases, this policy strengthens requirements described in the [CCADB Poli
 Chrome Root Program Participants MUST:
 
 1. Follow the requirements defined in the [CCADB Policy](https://www.ccadb.org/policy).
-    1. When a timeline is not defined for a requirement specified within the CCADB Policy, updates MUST be submitted to the CCADB within 14 calendar days of being completed.
+    - a. When a timeline is not defined for a requirement specified within the CCADB Policy, updates MUST be submitted to the CCADB within 14 calendar days of being completed.
 2. Disclose all subordinate CA certificates capable of validating to a certificate included in the Chrome Root Store or associated with a CCADB Root Inclusion Request to the CCADB. Disclosure MUST take place within 7 calendar days of issuance and before the subject CA represented in the certificate begins issuing publicly-trusted certificates. 
 3. Disclose revocation of all subordinate CA certificates capable of validating to a certificate included in the Chrome Root Store or associated with a CCADB Root Inclusion Request to the CCADB within 7 calendar days of revocation. 
 4. Disclose either the Certificate Revocation List (CRL) Distribution Point or a JSON Array of Partitioned CRLs on root and subordinate CA certificate records in the CCADB within 7 days of the corresponding CA issuing its first certificate. This applies to each included CA certificate and each CA certificate chaining up to a certificate included in the Chrome Root Store.
