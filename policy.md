@@ -6,10 +6,6 @@ Bookmark this page as https://g.co/chrome/root-policy
 
 **Table of Contents**
 
-## Chrome Root Program Policy, Version 1.6
-
-**Last updated: TBD**
-
 - [Introduction](#introduction)
 - [Change History](#change-history)
 - [Definitions](#definitions)
