@@ -1,15 +1,3 @@
----
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-- - /Home/chromium-security/root-ca-policy
-  - Root Program Policy
-page_name: root-ca-policy
-title: Chrome Root Program Policy Archive - Version 1.4
----
-
 ## Archive Notice 
 
 <p><strong><span style="color:#FF0000">IMPORTANT:</span></strong> This page is retained for historical purposes only. 
@@ -364,4 +352,3 @@ Where permissible by law, CA owners must notify _chrome-root-program_ _[at]_ _go
 * other change control events involving PKI components that would materially affect the ongoing operations or perceived trustworthiness of a CA certificate included in the Chrome Root Store (e.g., changes to operational location(s)).
 
 Not limited to the circumstances above, the Chrome Root Program reserves the right to require re-application to the Chrome Root Store.
-

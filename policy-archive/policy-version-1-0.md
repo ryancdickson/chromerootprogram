@@ -1,15 +1,3 @@
----
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-- - /Home/chromium-security/root-ca-policy
-  - Root Program Policy
-page_name: root-ca-policy-version-1-0
-title: Chrome Root Program Policy Archive - Version 1.0
----
-
 ## Archive Notice 
 
 <p><strong><span style="color:#FF0000">IMPORTANT:</span></strong> This page is

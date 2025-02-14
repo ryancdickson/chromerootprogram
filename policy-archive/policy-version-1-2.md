@@ -1,24 +1,11 @@
----
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-- - /Home/chromium-security/root-ca-policy
-  - Root Program Policy
-page_name: root-ca-policy
-title: Chrome Root Program Policy Archive - Version 1.1
----
-
 ## Archive Notice 
 
 <p><strong><span style="color:#FF0000">IMPORTANT:</span></strong> This page is
  retained for historical purposes only. 
  
-Version 1.1 of the Chrome Root Program Policy was superseded by Version <a href=/Home/chromium-security/root-ca-policy/policy-archive/version-1-2/>1.2</a> on September 1, 2022.
+Version 1.2 of the Chrome Root Program Policy was superseded by Version <a href=/Home/chromium-security/root-ca-policy/policy-archive/version-1-3/>1.3</a> on January 6, 2023.
  
 For the latest version of the Chrome Root Program Policy, see <a href="https://g.co/chrome/root-policy">https://g.co/chrome/root-policy</a>.</p>
-
 
 ## Introduction
 Google Chrome relies on Certification Authority systems (herein referred to as “CAs”) to issue certificates to websites. Chrome uses these certificates to help ensure the connections it makes on behalf of its users are properly secured. Chrome accomplishes this by verifying that a website’s certificate was issued by a recognized CA, while also performing additional evaluations of the HTTPS connection's security properties. Certificates that are not issued by a CA recognized by Chrome, or by a user's local settings, can cause users to see warnings and error pages.
@@ -275,4 +262,3 @@ We value high-quality, independent audit criteria that result in accurate, detai
 In a future policy update, we intend to introduce two changes related to the annual audit criteria accepted by the Chrome Root Program for Technically Constrained subordinate CAs:
 1. Effective at a future date, the Chrome Root Program will no longer accept self-audits as permitted by the Baseline Requirements.
 2. Effective at a future date, all Technically Constrained subordinate CAs assessed against the WebTrust audit scheme must be assessed against both the WebTrust Principles and Criteria for Certification Authorities and the WebTrust Principles and Criteria for Certification Authorities – SSL Baseline with Network Security. Corresponding audit reports for CAs whose certificate does not assert an extendedKeyUsage value of id-kp-serverAuth must express non-performance of TLS certificate issuance and include an evaluation of the Network and Certificate System Security Requirements.
-
