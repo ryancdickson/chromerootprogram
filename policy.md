@@ -1,10 +1,10 @@
 # Chrome Root Program Policy, Version 1.6
 
-**Last updated: 2025-02-15**
+## Last updated: 2025-02-15
 
 Bookmark this page as [https://g.co/chrome/root-policy](https://g.co/chrome/root-policy)
 
-**Table of Contents**
+## Table of Contents
 
 - [Introduction](#introduction)
 - [Change History](#change-history)
