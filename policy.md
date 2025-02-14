@@ -431,7 +431,7 @@ Chrome Root Program Participants MUST:
 3. Disclose revocation of all subordinate CA certificates capable of validating to a certificate included in the Chrome Root Store or associated with a Root Inclusion Request to the CCADB within 7 calendar days of revocation. 
 4. Disclose either the Certificate Revocation List (CRL) Distribution Point or a JSON Array of Partitioned CRLs on root and subordinate CA certificate records in the CCADB within 7 days of the corresponding CA issuing its first certificate. This applies to each included CA certificate and each CA certificate chaining up to a certificate included in the Chrome Root Store.
    
-    - a. URLs SHOULD be of the "http" scheme (i.e., not "https")
+    - a. URLs SHOULD be of the "http" scheme (i.e., not "https").
    
     - b. When populating the CCADB with multiple CRL URLs for the JSON Array of Partitioned CRLs, Chrome Root Program Participants MUST ensure that each CRL contains a critical Issuing Distribution Point extension and the distributionPoint field of the extension MUST include a UniformResourceIdentifier.
         - The value of the UniformResourceIdentifier MUST exactly match a URL, from which the CRL was accessed, present in the CCADB record associated with the subordinate CA certificate.
