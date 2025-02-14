@@ -1,3 +1,13 @@
+---
+breadcrumbs:
+- - /Home
+  - Chromium
+- - /Home/chromium-security
+  - Chromium Security
+page_name: root-ca-policy
+title: Chrome Root Program Policy, Version 1.6
+---
+
 # Chrome Root Program Policy, Version 1.6
 
 ## Last updated: 2025-02-15
@@ -51,7 +61,7 @@ The Chrome Root Program Policy below establishes the minimum requirements for CA
 
 ### Apply for Inclusion
 
-CA Owners that satisfy the requirements defined in the policy below may apply for self-signed root CA certificate inclusion in the Chrome Root Store using [these](https://www.chromium.org/Home/chromium-security/root-ca-policy/apply-for-inclusion/) instructions.
+CA Owners that satisfy the requirements defined in the policy below may apply for self-signed root CA certificate inclusion in the Chrome Root Store using [these](apply-for-inclusion.md) instructions.
 
 ### Chrome's Ongoing Commitment to Transport Security
 
@@ -68,7 +78,7 @@ Chrome maintains a variety of mechanisms to protect its users from certificates 
 
 The "Moving Forward, Together" initiative envisions a future Web PKI that includes modern, reliable, highly agile, purpose-driven PKIs with an emphasis on automation, simplicity, and security.
 
-Learn more about priorities and initiatives that may influence future versions of this policy [here](https://www.chromium.org/Home/chromium-security/root-ca-policy/moving-forward-together/). Please note "Moving Forward, Together" is future looking and does not describe normative requirements.
+Learn more about priorities and initiatives that may influence future versions of this policy [here](moving-forward-together.md). Please note "Moving Forward, Together" is future looking and does not describe normative requirements.
 
 ### Additional Information
 
