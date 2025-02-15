@@ -27,13 +27,12 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.13'  # Change this to your desired Python version
+          python-version: '3.13.1'  # Change this to your desired Python version
           cache: 'pipenv'
 
       # Install pipenv
       - name: Install pipenv
-        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
-      - run: pipenv install
+        run: pip install --upgrade pipenv wheel
 
       # Runs a single command using the runners shell
       - name: Build Site
