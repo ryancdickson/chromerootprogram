@@ -58,7 +58,6 @@ def render_file(input_path, output_path, env, page_context={}):
 
     # Parse the front matter
     if match:
-        print("front matter", input_path)
         front_matter = yaml.safe_load(match.group(1))  # Parse YAML
         md_content = match.group(2)  # Extract Markdown part
     else:
@@ -111,7 +110,6 @@ def render_markdown(input_dir, output_dir, env, page_context={}) -> ConversionRe
             output_path = os.path.normpath(
                 os.path.join(output_dir, relative_path, output_filename)
             )
-            print(input_path, output_path)
 
             # Only Markdown files are rendered.
             if should_render:

@@ -27,7 +27,7 @@
     <h4>Policy Archive</h4>
     <nav>
       <ul>
-      {% for v in versions %}
+      {% for v in versions[:-1] %}
         <li><a href="{{ v.path | absolute_url }}">Version {{ v.version }}</a></li>
       {% endfor %}
       </ul>
