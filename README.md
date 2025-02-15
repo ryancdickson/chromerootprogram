@@ -9,3 +9,17 @@ In Chrome 105, Chrome began a platform-by-platform transition from relying on th
 The Chrome Root Program Policy establishes the minimum requirements for self-signed root CA certificates to be included as trusted in a default installation of Chrome. This GitHub repository contains a Markdown-formatted version of the authoritative version available [here](https://g.co/chrome/root-policy).
 
 Any questions regarding the Chrome Root Program Policy can be directed to chrome-root-program [at] google [dot] com.
+
+## Updating the Policy
+
+The site is deployed on commits to `main`. To add a new policy revision:
+
+- Archive the current version in `content/policy-archive/`.
+- Update `config.yaml`:
+    - Update `context.versions` array so that the path for the now archived
+      version is correct.
+    - Add a new entry at the bottom of the array for the next version, with `path: /`
+    - Bump `context.current_version` to the next version value
+- Update `content/index.md` with the new content.
+
+This can all be done in a single pull request. The diff in the PR will show the diff between the two policy versions.
