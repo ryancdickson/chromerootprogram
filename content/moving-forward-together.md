@@ -25,7 +25,7 @@ With those goals in mind, the Chrome Root Program continues to explore introduci
 
 ## Understanding "Moving Forward, Together" initiatives
 
-The initiatives described on this page are distinct from the requirements detailed in the [Chrome Root Program Policy](policy.md). These initiatives are proposals for exploration. They are not requirements.
+The initiatives described on this page are distinct from the requirements detailed in the [Chrome Root Program Policy](index). These initiatives are proposals for exploration. They are not requirements.
 
 Some proposals may change during our review process, after considering community feedback, or studying the ecosystem impacts and tradeoffs of adoption. Others may not be adopted at all.
 
@@ -65,7 +65,7 @@ This helps ensure our decisions are informed by real-world data, observed Chrome
 
 Certificates issued by publicly-trusted CA Owners (i.e., those included in various product and operating system trust stores) serve a variety of use cases including TLS server authentication, TLS client authentication, secure email (e.g., signed and encrypted email), document signing, code signing, and others. Up until about five years ago, it was common to see some or all of these use cases served from a single PKI hierarchy. While this approach offered flexibility to some stakeholders, there is inherent complexity of balancing multiple, sometimes competing use cases and requirements, especially as the CA/Browser Forum created additional sets of standards focused on use cases beyond TLS.
 
-Beginning in September 2022, the Chrome Root Program [codified](policy-archive/policy-version-1-1.md#4-dedicated-tls-pki-hierarchies) its commitment to simplicity by requiring applicant PKI hierarchies to the Chrome Root Store focus only on serving TLS use cases. However, while this approach promotes future simplicity, not all CA certificates included in the Chrome Root Store are aligned on this principle. To do so, and to completely realize the benefits of the transition to TLS-dedicated hierarchies, we intend to remove "multi-purpose" root CA certificates, or those CA certificates not dedicated to TLS server authentication use cases, from the Chrome Root Store.
+Beginning in September 2022, the Chrome Root Program [codified](policy-archive/policy-version-1-1#4-dedicated-tls-pki-hierarchies) its commitment to simplicity by requiring applicant PKI hierarchies to the Chrome Root Store focus only on serving TLS use cases. However, while this approach promotes future simplicity, not all CA certificates included in the Chrome Root Store are aligned on this principle. To do so, and to completely realize the benefits of the transition to TLS-dedicated hierarchies, we intend to remove "multi-purpose" root CA certificates, or those CA certificates not dedicated to TLS server authentication use cases, from the Chrome Root Store.
 
 **Why it matters:**
 
@@ -163,7 +163,7 @@ The Chrome Root Program participated in drafting CA/Browser Forum [Ballot SC-075
 
 **Theme:** "Encouraging modern infrastructures and agility"
 
-In Chrome Root Program Policy 1.5, we [landed](policy-archive/policy-version-1-5.md#root-ca-term-limit) changes that set a maximum "term-limit" (i.e., period of inclusion) for root CA certificates included in the Chrome Root Store to 15 years.
+In Chrome Root Program Policy 1.5, we [landed](policy-archive/policy-version-1-5#root-ca-term-limit) changes that set a maximum "term-limit" (i.e., period of inclusion) for root CA certificates included in the Chrome Root Store to 15 years.
 
 While we still prefer a more agile approach, and may again explore this in the future, we encourage CA Owners to explore how they can adopt more frequent root rotation.
 
