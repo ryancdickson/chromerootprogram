@@ -142,7 +142,7 @@ In some cases, this policy strengthens requirements described in the Baseline Re
 
 ### 2. Chrome Root Program Participant Policies
 
-#### 2.1. Applicant PKI Hierarchies
+#### 2.1 Applicant PKI Hierarchies
 
 Applicants MUST accurately describe the policies and practices of their CA(s) within a single CA policy document that is:
 
