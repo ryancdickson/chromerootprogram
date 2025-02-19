@@ -1,12 +1,4 @@
 ---
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-- - /Home/chromium-security/root-ca-policy
-  - Root Program Policy
-page_name: apply-for-inclusion
 title: Apply for Inclusion
 ---
 

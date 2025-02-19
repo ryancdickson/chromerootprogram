@@ -1,10 +1,4 @@
 ---
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-page_name: root-ca-policy
 title: Chrome Root Program Policy, Version 1.6
 ---
 
