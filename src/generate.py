@@ -42,25 +42,55 @@ from markdown.extensions import Extension
 
 
 class RemoveMdExtensionTreeprocessor(Treeprocessor):
+
+    def __init__(self, md, base_url, dir_path):
+        super().__init__(md)
+        self.base_url = urllib.parse.urlparse(base_url)
+        self.dir_path = dir_path
+
     def run(self, root):
-        """Iterate over all <a> tags in the HTML tree and remove `.md` from their href."""
+        """Iterate over all <a> tags in the HTML tree and remove `.md` from
+        their href. If the link is in a relative directory, resolve the full
+        link using base URL"""
         for element in root.iter("a"):
             href = element.get("href")
             if href and href.endswith(".md") and not href.startswith("http"):
-                # Strip off the last 3 chars (".md")
-                element.set("href", href[:-3])
+                full_path = os.path.normpath(
+                    os.path.join(self.base_url.path, self.dir_path, href)
+                )
+                print("href, full_path:", href, full_path)
+                target = urllib.parse.urlunparse(
+                    (
+                        self.base_url.scheme or "http",
+                        self.base_url.netloc,
+                        full_path,
+                        self.base_url.params,
+                        self.base_url.query,
+                        self.base_url.fragment,
+                    )
+                )
+                if target.endswith("/index.md"):
+                    target = target[:-9]
+                else:
+                    # Strip off the last 3 chars (".md")
+                    target = target[:-3]
+                element.set("href", target)
 
 
 class RemoveMdExtension(Extension):
+
+    def __init__(self, base_url, dir_path):
+        super().__init__()
+        self.base_url = base_url
+        self.dir_path = dir_path
+
     def extendMarkdown(self, md):
+        print("base_url, dir_path", self.base_url, self.dir_path)
         md.treeprocessors.register(
-            RemoveMdExtensionTreeprocessor(md), "remove_md_extension", priority=15
+            RemoveMdExtensionTreeprocessor(md, self.base_url, self.dir_path),
+            "remove_md_extension",
+            priority=15,
         )
-
-
-def make_extension(**kwargs):
-    """Entry point for the extension."""
-    return RemoveMdExtension(**kwargs)
 
 
 def replace_extension(filename, old, new):
@@ -100,7 +130,14 @@ def render_file(input_path, output_path, env, page_context={}):
     # Convert Markdown to HTML
     html_content = markdown.markdown(
         md_content,
-        extensions=["tables", "toc", "attr_list", RemoveMdExtension()],
+        extensions=[
+            "tables",
+            "toc",
+            "attr_list",
+            RemoveMdExtension(
+                page_context.get("base_url"), page_context.get("dir_path")
+            ),
+        ],
     )
 
     # Wrap with a template
@@ -169,7 +206,9 @@ def render_markdown(input_dir, output_dir, env, page_context={}) -> ConversionRe
             if should_render:
                 # Ensure the parent directory (or in the case of .md, the subfolder) exists.
                 os.makedirs(os.path.dirname(output_path), exist_ok=True)
-                render_file(input_path, output_path, env, page_context=page_context)
+                context = page_context.copy()
+                context["dir_path"] = relative_path
+                render_file(input_path, output_path, env, page_context=context)
                 converted += 1
             else:
                 os.makedirs(os.path.dirname(output_path), exist_ok=True)

@@ -1,7 +1,7 @@
 ## Archive Notice
 
 <p><strong><span style="color:#FF0000">IMPORTANT:</span></strong> This page is
- retained for historical purposes only.
+ retained for historical purposes only.</p>
 
 Version 1.1 of the Chrome Root Program Policy was superseded by Version [1.2](./policy-version-1-2.md) on September 1, 2022.
 
