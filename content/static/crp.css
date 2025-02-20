@@ -33,9 +33,14 @@ h1 {
     font-size: 2em;
 }
 
+/* Force h5 and h6 to be the same size as h4 for readability */
+h4, h5, h6 {
+    font-size: 1em;
+}
+
 /* Headings can be black. Drop the top margin, so we can align the top of the
  * page better. */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
     color: black;
     margin-top: 0;
 }
