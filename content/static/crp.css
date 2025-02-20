@@ -33,10 +33,25 @@ h1 {
     font-size: 2em;
 }
 
-/* Headings can be black. Drop the top margin, so we can align the top of the
- * page better. */
-h1, h2, h3, h4 {
+/* Force h5 and h6 to be the same size as h4 for readability */
+h5, h6 {
+    font-size: 14px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+/* Headings can be black */
+h1, h2, h3, h4, h5, h6 {
     color: black;
+}
+
+/* Drop the top margin so we can align the top of the page better */
+h1, h2, h3, h4, {
     margin-top: 0;
 }
 

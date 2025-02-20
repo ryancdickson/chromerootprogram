@@ -1,6 +1,7 @@
 ---
 title: Moving Forward, Together
 ---
+# Moving Forward, Together
 
 ## Last updated: 2024-10-09
 

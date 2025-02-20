@@ -1,6 +1,7 @@
 ---
 title: Apply for Inclusion
 ---
+# Apply for Inclusion
 
 ## Last updated: 2025-02-15
 
