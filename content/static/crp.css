@@ -34,8 +34,8 @@ h1 {
 }
 
 /* Force h5 and h6 to be the same size as h4 for readability */
-h4, h5, h6 {
-    font-size: 1em;
+h5, h6 {
+    font-size: 14px;
 }
 
 /* Headings can be black. Drop the top margin, so we can align the top of the
