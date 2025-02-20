@@ -36,6 +36,13 @@ h1 {
 /* Force h5 and h6 to be the same size as h4 for readability */
 h5, h6 {
     font-size: 14px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
 }
 
 /* Headings can be black */
