@@ -6,6 +6,8 @@ When making HTTPS connections, Chrome refers to a list of root certificates from
 
 In Chrome 105, Chrome began a platform-by-platform transition from relying on the host operating system's Root Store to its own on Windows, macOS, ChromeOS, Linux, and Android. This change makes Chrome more secure and promotes consistent user and developer experiences across platforms. Apple policies prevent the Chrome Root Store and corresponding Chrome Certificate Verifier from being used on Chrome for iOS. Learn more about the Chrome Root Store and Chrome Certificate Verifier [here](https://chromium.googlesource.com/chromium/src/+/main/net/data/ssl/chrome_root_store/faq.md).
 
-The Chrome Root Program Policy establishes the minimum requirements for self-signed root CA certificates to be included as trusted in a default installation of Chrome. This GitHub repository contains a Markdown-formatted version of the authoritative version available [here](https://g.co/chrome/root-policy).
+The Chrome Root Program Policy establishes the minimum requirements for self-signed root CA certificates to be included as trusted in a default installation of Chrome. This GitHub repository contains the authoritative version of the Chrome Root Program Policy, previously hosted on chromium.org.
+
+An HTML-rendered version is available [here](https://googlechrome.github.io/chromerootprogram/).
 
 Any questions regarding the Chrome Root Program Policy can be directed to chrome-root-program [at] google [dot] com.
