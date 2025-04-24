@@ -8,6 +8,7 @@ title: Moving Forward, Together
 For more than the last decade, Web PKI community members have tirelessly worked together to make the Internet a safer place. However, there’s still more work to be done. While we don’t know exactly what the future looks like, we remain focused on promoting changes that increase speed, security, stability, and simplicity throughout the Web PKI ecosystem.
 
 With those goals in mind, the Chrome Root Program continues to explore introducing future requirements related to the following themes:
+
 *   Encouraging modern infrastructures and agility
 *   Focusing on simplicity
 *   Promoting automation
@@ -39,6 +40,7 @@ Some of the proposals described on this page might be achieved through collabora
 ### What informs our approach?
 
 To explore and understand the broader ecosystem impacts of these proposals, we:
+
 *   study ecosystem data from publicly available tools like [crt.sh](http://crt.sh) and [Censys](https://censys.com/),
 *   interpret data resulting from Chrome tools, experiments, and usage data,
 *   evaluate peer-reviewed research,
