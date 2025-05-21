@@ -1,20 +1,14 @@
 ---
-breadcrumbs:
-- - /Home
-  - Chromium
-- - /Home/chromium-security
-  - Chromium Security
-- - /Home/chromium-security/root-ca-policy
-  - Root Program Policy
-page_name: moving-forward-together
 title: Moving Forward, Together
 ---
+# Moving Forward, Together
 
 ## Last updated: 2024-10-09
 
 For more than the last decade, Web PKI community members have tirelessly worked together to make the Internet a safer place. However, there’s still more work to be done. While we don’t know exactly what the future looks like, we remain focused on promoting changes that increase speed, security, stability, and simplicity throughout the Web PKI ecosystem.
 
 With those goals in mind, the Chrome Root Program continues to explore introducing future requirements related to the following themes:
+
 *   Encouraging modern infrastructures and agility
 *   Focusing on simplicity
 *   Promoting automation
@@ -25,7 +19,7 @@ With those goals in mind, the Chrome Root Program continues to explore introduci
 
 ## Understanding "Moving Forward, Together" initiatives
 
-The initiatives described on this page are distinct from the requirements detailed in the [Chrome Root Program Policy](policy.md). These initiatives are proposals for exploration. They are not requirements.
+The initiatives described on this page are distinct from the requirements detailed in the [Chrome Root Program Policy](index). These initiatives are proposals for exploration. They are not requirements.
 
 Some proposals may change during our review process, after considering community feedback, or studying the ecosystem impacts and tradeoffs of adoption. Others may not be adopted at all.
 
@@ -46,6 +40,7 @@ Some of the proposals described on this page might be achieved through collabora
 ### What informs our approach?
 
 To explore and understand the broader ecosystem impacts of these proposals, we:
+
 *   study ecosystem data from publicly available tools like [crt.sh](http://crt.sh) and [Censys](https://censys.com/),
 *   interpret data resulting from Chrome tools, experiments, and usage data,
 *   evaluate peer-reviewed research,
@@ -65,7 +60,7 @@ This helps ensure our decisions are informed by real-world data, observed Chrome
 
 Certificates issued by publicly-trusted CA Owners (i.e., those included in various product and operating system trust stores) serve a variety of use cases including TLS server authentication, TLS client authentication, secure email (e.g., signed and encrypted email), document signing, code signing, and others. Up until about five years ago, it was common to see some or all of these use cases served from a single PKI hierarchy. While this approach offered flexibility to some stakeholders, there is inherent complexity of balancing multiple, sometimes competing use cases and requirements, especially as the CA/Browser Forum created additional sets of standards focused on use cases beyond TLS.
 
-Beginning in September 2022, the Chrome Root Program [codified](policy-archive/policy-version-1-1.md#4-dedicated-tls-pki-hierarchies) its commitment to simplicity by requiring applicant PKI hierarchies to the Chrome Root Store focus only on serving TLS use cases. However, while this approach promotes future simplicity, not all CA certificates included in the Chrome Root Store are aligned on this principle. To do so, and to completely realize the benefits of the transition to TLS-dedicated hierarchies, we intend to remove "multi-purpose" root CA certificates, or those CA certificates not dedicated to TLS server authentication use cases, from the Chrome Root Store.
+Beginning in September 2022, the Chrome Root Program [codified](policy-archive/policy-version-1-1#4-dedicated-tls-pki-hierarchies) its commitment to simplicity by requiring applicant PKI hierarchies to the Chrome Root Store focus only on serving TLS use cases. However, while this approach promotes future simplicity, not all CA certificates included in the Chrome Root Store are aligned on this principle. To do so, and to completely realize the benefits of the transition to TLS-dedicated hierarchies, we intend to remove "multi-purpose" root CA certificates, or those CA certificates not dedicated to TLS server authentication use cases, from the Chrome Root Store.
 
 **Why it matters:**
 
@@ -138,7 +133,7 @@ Despite the existing domain control validation requirements defined by the CA/Br
 
 Multi-Perspective Issuance Corroboration (referred to as "MPIC"), sometimes referred to as "Multi-Perspective Domain Validation" ("MPDV") or "Multi-VA", enhances existing domain control validation methods by reducing the likelihood that routing attacks can result in fraudulently issued certificates. Rather than performing domain control validation and authorization from a single geographic or routing vantage point, which an adversary could influence as demonstrated by security researchers, MPIC implementations perform the same validation from multiple geographic locations and/or Internet Service Providers and have been [observed](https://drive.google.com/file/d/15e4Z9InYbThwJsDuH0oS7vfXKvdSBzi9/view) as an effective countermeasure against ethically conducted, real-world BGP hijacks ([4](https://arxiv.org/abs/2302.08000)).
 
-The Chrome Root Program [led](https://drive.google.com/file/d/1LTwtAwHXcSaPVSsqKQztNJrV2ozHJ7ZL/view?usp=sharing) a work team of ecosystem participants which culminated in a CA/Browser Forum Ballot to require adoption of MPIC via [Ballot SC-067](https://cabforum.org/2024/08/05/ballot-sc-67-v3-require-domain-validation-and-caa-checks-to-be-performed-from-multiple-network-perspectives-corroboration/). The ballot received unanimous support from organizations who participated in voting, and the adoption process is ongoing.
+The Chrome Root Program [led](https://drive.google.com/file/d/1LTwtAwHXcSaPVSsqKQztNJrV2ozHJ7ZL/view?usp=sharing) a work team of ecosystem participants which culminated in a CA/Browser Forum Ballot to require adoption of MPIC via [Ballot SC-067](https://cabforum.org/2024/08/05/ballot-sc067v3-require-domain-validation-and-caa-checks-to-be-performed-from-multiple-network-perspectives-corroboration/). The ballot received unanimous support from organizations who participated in voting, and the adoption process is ongoing.
 
 **Why it matters:**
 
@@ -152,7 +147,7 @@ The Chrome Root Program [led](https://drive.google.com/file/d/1LTwtAwHXcSaPVSsqK
 
 Linting refers to the automated process of analyzing X.509 certificates for errors, inconsistencies, and adherence to best practices and industry standards. Linting ensures certificates are well-formatted and include the necessary data for their intended use, such as website authentication. There are numerous open-source linting projects in existence (e.g., [certlint](https://github.com/certlint/certlint), [pkilint](https://github.com/digicert/pkilint), [pkimetal](https://github.com/pkimetal/pkimetal), [x509lint](https://github.com/kroeckx/x509lint), and [zlint](https://github.com/zmap/zlint)), in addition to numerous custom linting projects maintained by members of the Web PKI ecosystem.
 
-The Chrome Root Program participated in drafting CA/Browser Forum [Ballot SC-075](https://cabforum.org/2024/08/05/ballot-sc-75-pre-sign-linting/) to require adoption of certificate linting. The ballot received unanimous support from organizations who participated in voting, and the adoption process is ongoing.
+The Chrome Root Program participated in drafting CA/Browser Forum [Ballot SC-075](https://cabforum.org/2024/08/05/ballot-sc-075-pre-sign-linting/) to require adoption of certificate linting. The ballot received unanimous support from organizations who participated in voting, and the adoption process is ongoing.
 
 **Why it matters:**
 
@@ -163,7 +158,7 @@ The Chrome Root Program participated in drafting CA/Browser Forum [Ballot SC-075
 
 **Theme:** "Encouraging modern infrastructures and agility"
 
-In Chrome Root Program Policy 1.5, we [landed](policy-archive/policy-version-1-5.md#root-ca-term-limit) changes that set a maximum "term-limit" (i.e., period of inclusion) for root CA certificates included in the Chrome Root Store to 15 years.
+In Chrome Root Program Policy 1.5, we [landed](policy-archive/policy-version-1-5#root-ca-term-limit) changes that set a maximum "term-limit" (i.e., period of inclusion) for root CA certificates included in the Chrome Root Store to 15 years.
 
 While we still prefer a more agile approach, and may again explore this in the future, we encourage CA Owners to explore how they can adopt more frequent root rotation.
 
