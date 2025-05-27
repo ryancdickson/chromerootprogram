@@ -3,15 +3,15 @@ title: Apply for Inclusion
 ---
 # Apply for Inclusion
 
-## Last updated: 2025-02-15
+## Last updated: 2025-05-27
 
-The Chrome Root Program Policy defines the [minimum requirements](policy) that must be met by Certification Authority (CA) Owners for both initial and continued inclusion in the Chrome Root Store.
+The Chrome Root Program Policy defines the [minimum requirements](policy) that must be met by Certification Authority (CA) Owners for both initial and continued inclusion in the Chrome Root Store. The policy is periodically updated to further promote the Chrome Root Program's goals of [security, agility, and simplicity](moving-forward-together). Generally, all pending applications submitted to Google Chrome in the Common CA Database (CCADB) should adhere to the latest version of this policy, including any specific criteria for applicants. If an existing inclusion request doesn't meet the requirements of a revised policy or updated applicant-specific criteria, the relevant CA Owner should request a reversion of their CCADB case status to "CA Providing Data." This allows the CA Owner to modify their inclusion request and demonstrate sufficient alignment with the current policy and requirements.
 
 Google includes or removes self-signed root CA certificates in the Chrome Root Store as it deems appropriate at its sole discretion. The selection and ongoing inclusion of CA certificates is done to enhance the security of Chrome and promote interoperability. CA certificates that do not provide a broad service to all browser users will not be added to, or may be removed from the Chrome Root Store. CA certificates included in the Chrome Root Store must provide value to Chrome end users that exceeds the risk of their continued inclusion.
 
 ### Inclusion Processing
 
-The Chrome Root Program and corresponding Root Store processes inclusion requests and requests for changes through the Common CA Database (CCADB). CA Owners who satisfy all of the requirements in the Chrome Root Program [Policy](policy) may apply.
+The Chrome Root Program and corresponding Root Store processes inclusion requests and requests for changes through the CCADB. CA Owners who satisfy all of the requirements in the Chrome Root Program [Policy](policy) may apply.
 
 The application process includes:
 
