@@ -31,7 +31,7 @@ Bookmark this page as [https://g.co/chrome/root-policy](https://g.co/chrome/root
         - [4.3.1.1. ACME Solutions](#4311-acme-solutions)
         - [4.3.1.2. Non-ACME Solutions](#4312-non-acme-solutions)
       - [4.3.2. Encouraging use of Automation Solutions](#432-encouraging-use-of-automation-solutions)
-    - [4.4. Promote Increased Transparency in the Web PKI](#44-promote-increased-transparency-in-the-web-pki)
+    - [4.4. Promote Increased Transparency](#44-promote-increased-transparency)
   - [5. Audits](#5-audits)
     - [5.1. Annual Audits](#51-annual-audits)
     - [5.2. Ad-Hoc Audits](#52-ad-hoc-audits)
