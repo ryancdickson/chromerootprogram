@@ -303,7 +303,7 @@ While ACME support is encouraged, Applicant PKI hierarchies MAY support other au
 
 ##### 4.3.2 Encouraging use of Automation Solutions
 
-The following requirements are intended to promote use of automation solutions to increase agility in the Web PKI and improve the [security](https://zanema.com/papers/imc23_stale_certs.pdf) and resilience of the Internet ecosystem, while recognizing that at the moment, not all subscriber use cases can be addressed using automation.
+The following requirements are intended to promote use of automation solutions to increase agility and improve the [security](https://zanema.com/papers/imc23_stale_certs.pdf) and resilience of the Internet ecosystem, while recognizing that at the moment, not all subscriber use cases can be addressed using automation.
 
 For Applicant PKI hierarchies subject of a CCADB Root Inclusion Request submitted **on or after September 15, 2025**, the following requirements apply:
 
