@@ -320,7 +320,7 @@ For Applicant PKI hierarchies subject of a CCADB Root Inclusion Request submitte
 
 In cases where the above requirements cannot be met, CA Owners are encouraged to collect and share the corresponding subscriber use cases and affected technologies with chrome-root-program [at] google [dot] com on a quarterly basis in a format of their choosing to support the Chrome Root Program in better understanding blockers and opportunities for ecosystem improvement.
 
-#### 4.4 Promote Increased Transparency in the Web PKI
+#### 4.4 Promote Increased Transparency
 
 Within 24 hours of issuance, Chrome Root Program Participants SHOULD log final certificates to at least one CT log [usable](https://googlechrome.github.io/CertificateTransparency/log_list.html) in Chrome at the time of issuance.
 
