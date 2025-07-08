@@ -136,7 +136,7 @@ In some cases, this policy strengthens requirements described in the Baseline Re
 
 The Chrome Root Program relies on the [CCADB](https://ccadb.org/) to identify and maintain up-to-date information for Chrome Root Program Participants and the corresponding PKI hierarchies.
 
-Chrome Root Program Participants MUST follow the requirements defined in the [CCADB Policy](https://www.ccadb.org/policy).
+Chrome Root Program Participants MUST adhere to the latest version of the [CCADB Policy](https://www.ccadb.org/policy).
 
 In some cases, this policy strengthens requirements described in the CCADB Policy.
 
@@ -279,7 +279,7 @@ Applicant PKI hierarchies SHOULD support the Automatic Certificate Management En
     - newOrder
     - revokeCert
 - Each Applicant PKI hierarchy's endpoint's corresponding issuing CA(s) MUST support Certification Authority Authorization (CAA) Record Extensions for Account URI and ACME Method Binding, as specified in [RFC 8657](https://www.rfc-editor.org/rfc/rfc8657).
-- Applicant PKI hierarchies supporting the ACME protocol MUST support ACME Renewal Information (ARI, RFC [9773](https://datatracker.ietf.org/doc/rfc9773/)).
+- Applicant PKI hierarchies supporting the ACME protocol MUST support ACME Renewal Information (ARI, [RFC 9773](https://datatracker.ietf.org/doc/rfc9773/)).
 - ACME endpoints SHOULD be publicly accessible.
 - Each endpoint SHOULD be hosted using an appropriate and readily accessible online means that is available on a 24x7 basis.
 
@@ -297,7 +297,7 @@ While ACME support is encouraged, Applicant PKI hierarchies MAY support other au
     - be sufficiently detailed in a completed "Automated Solution Assessment" form by requesting a copy from chrome-root-program [at] google [dot] com.
     - support comparable features as described in [RFC 8657](https://www.rfc-editor.org/rfc/rfc8657) to restrict issuance capabilities to a specific CA account(s) using the "accounturi" CAA parameter and to restrict permitted domain validation methods using the "validationmethods" CAA parameter.
     - support and/or request certificate revocation.
-    - support comparable features as described by ACME Renewal Information (ARI, RFC [9773](https://datatracker.ietf.org/doc/rfc9773/)).
+    - support comparable features as described by ACME Renewal Information (ARI, [RFC 9773](https://datatracker.ietf.org/doc/rfc9773/)).
 - The automated solution SHOULD:
     - support automated deployment (i.e., installation and configuration) of the issued certificate without "hands-on" input from humans (comparable to how ACME clients function).
 
@@ -340,7 +340,7 @@ Audits MUST NOT rely on a version of the accepted audit criteria below if it has
 | Technically Constrained Non-TLS Subordinate CA | EKU is present and does not include id-kp-serverAuth or anyExtendedKeyUsage. | Minimally expected to be audited as defined in Section 8.7 of the BRs (self-audit). |
 | All others | N/A | Minimally expected to be audited as defined in Section 8.7 of the BRs (self-audit). |
 
-\*\* while existing CA certificates trusted by Chrome MAY have EKU values as described in this table, Applicant PKI hierarchies MUST remain [dedicated to only TLS server authentication use cases](42-promote-use-of-dedicated-tls-server-authentication-pki-hierarchies)
+\*\* while existing CA certificates trusted by Chrome MAY have EKU values as described in this table, Applicant PKI hierarchies MUST remain [dedicated to only TLS server authentication use cases](#42-promote-use-of-dedicated-tls-server-authentication-pki-hierarchies)
 
 \*\*\* accepted on a discretionary basis
 
