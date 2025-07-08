@@ -26,7 +26,7 @@ Bookmark this page as [https://g.co/chrome/root-policy](https://g.co/chrome/root
     - [4.2. Promote use of Dedicated TLS Server Authentication PKI Hierarchies](#42-promote-use-of-dedicated-tls-server-authentication-pki-hierarchies)
       - [4.2.1. Applicant PKI Hierarchies](#421-applicant-pki-hierarchies)
       - [4.2.2. PKI Hierarchies included in the Chrome Root Store](#422-pki-hierarchies-included-in-the-chrome-root-store)
-    - [4.3. Promote Cryptographic Agility and Resilience in the Web PKI](#43-promote-cryptographic-agility-and-resilience-in-the-web-pki)
+    - [4.3. Promote Cryptographic Agility and Resilience](#43-promote-cryptographic-agility-and-resilience)
       - [4.3.1. Automation Support](#431-automation-support)
         - [4.3.1.1. ACME Solutions](#4311-acme-solutions)
         - [4.3.1.2. Non-ACME Solutions](#4312-non-acme-solutions)
