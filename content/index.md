@@ -89,7 +89,7 @@ This policy, along with archived versions, is available in Markdown [here](https
 
 | Version | Date | Note |
 |-------- |----- |----- |
-| 1.7 | 2025-07-14 | Updates include, but are not limited to: *(1)* add the ARI RFC numerical identifier, *(2)* remove requirements redundant with CCADB Policy Version 2.0.
+| 1.7 | 2025-07-14 | Updates include, but are not limited to: *(1)* add the ARI RFC numerical identifier, *(2)* remove requirements redundant with CCADB Policy Version 2.0
 | 1.6 | 2025-02-15 | Updates include, but are not limited to: *(1)* the future phase-out of non-TLS server authentication dedicated hierarchies from the Chrome Root Store, *(2)* requirements for future Applicants related to automation support, promoting simplicity of policy documents, and the definition of a dedicated TLS server authentication PKI hierarchy, *(3)* improved alignment with the TLS Baseline Requirements following Ballot SC-077, *(4)* addition of subsection numbers and major reorganization of normative and non-normative requirements|
 | 1.5 | 2024-01-16 | Updates include, but are not limited to: *(1)* incorporated CA Owner feedback in response to policy Version 1.4 (clean-ups and clarifications throughout the policy), *(2)* added new subsections for Root CA Key Material Freshness, Automation Support, and the Root CA Term-Limit, *(3)* aligned incident reporting format and timelines with CCADB.org |
 | 1.4 | 2023-03-03 | Updates include, but are not limited to: *(1)* alignment with CCADB Policy Version 1.2 and the Baseline Requirements, *(2)* clarify requirements related to the submission of annual self-assessments, *(3)* clarify requirements to better align with program intent (e.g., CA Owner policy document freshness), *(4)* updated audit and incident reporting requirements to promote increased transparency, *(5)* require subordinate CA disclosures in CCADB, *(6)* clarify CA certificate issuance notification requirements |
@@ -237,7 +237,7 @@ To align all PKI hierarchies included in the Chrome Root Store on the principle 
         -  **prior to June 15, 2026,** include the extendedKeyUsage extension and (1) only assert an extendedKeyUsage purpose of id-kp-serverAuth OR (2) only assert extendedKeyUsage purposes of id-kp-serverAuth and id-kp-clientAuth.
         -  **on or after June 15, 2026,** include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
     -  NOT contain a public key corresponding to any other unexpired or unrevoked certificate that asserts different extendedKeyUsage values.
-2. All corresponding unexpired and unrevoked subscriber (i.e., TLS server authentication) certificates issued on or after **June 15, 2026** MUST include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
+2. All corresponding unexpired and unrevoked subscriber certificates issued on or after **June 15, 2026** MUST include the extendedKeyUsage extension and only assert an extendedKeyUsage purpose of id-kp-serverAuth.
 
 **Before** **June 15, 2026**, CA Owners with a CA included in the Chrome Root Store whose corresponding PKI hierarchy does not adhere to the above requirements MAY, at their own discretion:
 
@@ -340,7 +340,7 @@ Audits MUST NOT rely on a version of the accepted audit criteria below if it has
 | Technically Constrained Non-TLS Subordinate CA | EKU is present and does not include id-kp-serverAuth or anyExtendedKeyUsage. | Minimally expected to be audited as defined in Section 8.7 of the BRs (self-audit). |
 | All others | N/A | Minimally expected to be audited as defined in Section 8.7 of the BRs (self-audit). |
 
-\*\* while existing CA certificates trusted by Chrome MAY have EKU values as described in this table, Applicant PKI hierarchies MUST remain [dedicated to only TLS server authentication use cases](#32-promote-use-of-dedicated-tls-server-authentication-pki-hierarchies)
+\*\* while existing CA certificates trusted by Chrome MAY have EKU values as described in this table, Applicant PKI hierarchies MUST remain [dedicated to only TLS server authentication use cases](42-promote-use-of-dedicated-tls-server-authentication-pki-hierarchies)
 
 \*\*\* accepted on a discretionary basis
 
