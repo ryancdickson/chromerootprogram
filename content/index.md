@@ -250,7 +250,7 @@ The subsequently constrained multi-purpose root CA certificate(s) will be schedu
 
 To reduce negative impact to the ecosystem, the Chrome Root Store may temporarily continue to include a multi-purpose root CA certificate in the Chrome Root Store without an SCTNotAfter constraint on a case-by-case basis, but only if the corresponding CA Owner has submitted a Root Inclusion Request to the CCADB for a replacement root CA certificate **before June 15, 2026**.
 
-#### 4.3 Promote Cryptographic Agility and Resilience in the Web PKI
+#### 4.3 Promote Cryptographic Agility and Resilience
 
 ##### 4.3.1 Automation Support
 
