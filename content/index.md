@@ -388,7 +388,7 @@ Due to the incorporation of the Baseline Requirements into CA policy documents, 
 
 #### 6.2 Communicating with Chrome During Incidents
 
-The Chrome Root Program prioritizes and remains committed to promoting public disclosure and discussion of incidents, as they can affect the whole Web PKI ecosystem, not just Chrome and its users. The Chrome Root Program's sole responsibility when responding to incidents is upholding the safety and security of Chrome's users.
+The Chrome Root Program prioritizes and remains committed to promoting public disclosure and discussion of incidents, as they can affect the whole Internet ecosystem, not just Chrome and its users. The Chrome Root Program's sole responsibility when responding to incidents is upholding the safety and security of Chrome's users.
 
 As standard practice, the Chrome Root Program does not:
 
